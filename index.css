@@ -49,23 +49,27 @@ header {
 
 main {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 /* Sections <--- */ /* ? Hero Section*/
 
+.hero {
+    background: linear-gradient(to right, #B75381, #3B8C98);
+    background-color: #111;
+}
+
 .hero-section {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
     max-width: 70%;
-    height: 50vh;
-    background-color: #222;
-    margin-top: 2rem;
+    height: 70vh;
     padding: 2rem;
-    border-radius: .5rem;
-    background: linear-gradient(to right, #B75381, #3B8C98);
-    border: 2px solid black;
+    margin: 0 auto;
+    background: none;
 }
 
 .hero-info{
@@ -74,19 +78,25 @@ main {
     justify-content: center;
     align-items: center;
     text-align: center;
-    gap: 20px;
+    gap: 1.5rem;
     max-width: 50%;
     color: #111;
     font-weight: 500;
 }
 
 .hero-info h1 {
-    font-size: 3rem;
+    color: #222;
+    font-size: 3.5rem;
+}
+
+.hero-info p{
+    font-size: 1.1rem;
 }
 
 .hero-section img {
+    max-width: 75%;
+    height: 75%;
     border-radius: .5rem;
-    /* border: 2px solid rgba(0, 0, 0, 0.500); */
 }
 
 .hero-cta {
