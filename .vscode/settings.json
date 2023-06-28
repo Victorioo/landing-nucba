@@ -1,5 +1,8 @@
 {
     "oneDarkPro.vivid": true,
-    "oneDarkPro.editorTheme": "One Dark Pro Flat",
-    "oneDarkPro.bold": true
+    "oneDarkPro.editorTheme": "One Dark Pro",
+    "oneDarkPro.bold": true,
+    "editor.accessibilityPageSize": 500,
+    "editor.fontVariations": false,
+    "scm.inputFontFamily": "editor"
 }
