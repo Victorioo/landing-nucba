@@ -288,8 +288,16 @@ main {
     height: 100vh;
   }
 
+  .section-info h1 {
+    font-size: 1.5rem;
+  }
+
   .section-info {
-    /* width: 90%; */
-    height: 80%;
+    height: 70%;
+    text-align: center;
+  }
+
+  .section-info p {
+    max-width: 100%;
   }
 }
