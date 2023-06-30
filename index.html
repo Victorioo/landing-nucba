@@ -1,59 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
     <title>Landing NUCBA</title>
-</head>
-<body>
-
-                                <!-- Header -->
-
+  </head>
+  <body>
+    <div></div>
+    <!-- Header -->
     <header>
-
-        <img src="./assets/logo.png" alt="Logo de la empresa" width="70">
-        <nav>
-            <ul class="links-container">
-                <li class="link">Home</li>
-                <li class="link">Albums</li>
-                <li class="link">About</li>
-                <li class="link">Contact</li>
-            </ul>
-        </nav>
+      <img src="./assets/logo.png" alt="Logo de la empresa" width="70" />
+      <nav>
+        <ul class="links-container">
+          <li class="link"><a href="#">Home</a></li>
+          <li class="link"><a href="#section-album">Álbums</a></li>
+          <li class="link"><a href="#">About</a></li>
+          <li class="link"><a href="#">Contact</a></li>
+        </ul>
+      </nav>
     </header>
 
-    
     <main>
+      <!-- *Sección del hero -->
 
+      <section class="hero">
+        <div class="hero-section">
+          <div class="hero-info">
+            <h1>Twenty One Pilots</h1>
+            <p>
+              Twenty One Pilots is an American musical duo from Columbus, Ohio.
+              The band was formed in 2009 by vocalist Tyler Joseph along with
+              Nick Thomas and Chris Salih, who left in 2011. Since their
+              departure, the line-up has consisted of Tyler Joseph and drummer
+              Josh Dun.
+            </p>
 
-        <!-- *Sección del hero -->
-
-        <section class="hero">
-
-            <div class="hero-section">
-                <div class="hero-info">
-                    <h1>Twenty One Pilots</h1>
-                    <p>Twenty One Pilots is an American musical duo from Columbus, Ohio. The band was formed in 2009 by vocalist Tyler Joseph along with Nick Thomas and Chris Salih, who left in 2011. Since their departure, the line-up has consisted of Tyler Joseph and drummer Josh Dun.</p>
-
-                    <div>
-                        <button class="hero-cta stream">Stream now</button>
-                        <button class="hero-cta buy">Buy now</button>
-                    </div>
-                </div>
-                <img src="./assets/top-hero.jpg" alt="Logo of scaled an icy album.">
-                <div/>
-            </section>
-            <!-- About section -->
-            <section class="section section-album">
-                <div class="section-info">
-                    <h1>Scaled an icy</h1>
-                    <!-- <h3>(latest album)</h3> -->
-                    <p>Scaled And Icy is the sixth full-length album and fourth studio album by American duo Twenty One Pilots released on May 21, 2021 through Fueled by Ramen and Elektra. The album title is an anagram of "Clancy is Dead", a reference to a character from their previous album, Trench.</p>
-                </div>
-                <img src="./assets/top-album.jpeg" alt="Logo del album scaled an icy album.">
-            </section>
-        </main>
-    </body>
-    </html>
+            <div>
+              <button class="hero-cta stream">Stream now</button>
+              <button class="hero-cta buy">Buy now</button>
+            </div>
+          </div>
+          <img src="./assets/top-hero.jpg" alt="Tyler and Josh sitted" />
+        </div>
+      </section>
+      <!-- About section -->
+      <section class="section section-album" id="section-album">
+        <div class="section-info">
+          <h1>Scaled an icy</h1>
+          <!-- <h3>(latest album)</h3> -->
+          <p>
+            Scaled And Icy is the sixth full-length album and fourth studio
+            album by American duo Twenty One Pilots released on May 21, 2021
+            through Fueled by Ramen and Elektra. The album title is an anagram
+            of "Clancy is Dead", a reference to a character from their previous
+            album, Trench.
+          </p>
+        </div>
+        <img src="./assets/top-album.jpeg" alt="Scaled an icy album" />
+      </section>
+    </main>
+  </body>
+</html>
