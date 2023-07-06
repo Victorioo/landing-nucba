@@ -64,7 +64,7 @@ main {
   align-items: center;
 }
 
-/* Sections <--- */ /* ? Hero Section*/
+/* *---------->ACÁ está el HERO<--- */
 
 .hero {
   background: linear-gradient(140deg, #333333, #000000, #ff4747);
@@ -133,7 +133,7 @@ main {
   background-color: #222;
 }
 
-/* ----> Section about */
+/* * ----> Section about (album)*/
 
 .section {
   display: flex;
@@ -189,7 +189,71 @@ main {
   font-weight: 500;
 }
 
-/* !Mobile adaptador ----> eliminar esto luego  */
+/* *A partir de acá está la seccion de las cards */
+
+.container-section {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  background-color: #111;
+  border-radius: 1rem;
+  padding: 2rem;
+  margin: 3rem 0;
+}
+
+.container-title {
+  justify-self: start;
+}
+
+.card-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin: 3rem 0;
+}
+
+.song-card {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  background-color: #222;
+  padding-bottom: 1rem;
+  border-radius: 0 10px 10px;
+  transition: transform 600ms;
+  cursor: pointer;
+}
+
+.song-card:hover {
+  transform: scale(1.04);
+  transition: transform 400ms;
+  .img-card:hover {
+    filter: blur(2px);
+  }
+}
+
+.img-card {
+  height: 250px;
+}
+
+.title-card {
+  margin-top: 10px;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.info-card {
+  font-weight: 300;
+  font-size: 1rem;
+  color: gray;
+}
+
+/* * -----------------> MediaQuerys a partir de aca <------------ */
+
+/* *Mobile adaptador ----> eliminar esto luego  */
 
 /* De infinito a 1366 */
 @media (max-width: 1366px) {
@@ -231,6 +295,16 @@ main {
   .section-info {
     height: 50%;
   }
+
+  /* *sección de cards */
+
+  .container-section {
+    width: 70%;
+  }
+
+  .img-card {
+    height: 200px;
+  }
 }
 
 /* DE 1024 a 729 */
@@ -261,6 +335,20 @@ main {
   .section-info {
     height: 50%;
   }
+
+  /* *Sección de las cards */
+
+  .container-section {
+    width: 70%;
+  }
+
+  .card-section {
+    flex-flow: column wrap;
+  }
+
+  .img-card {
+    height: 300px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -285,20 +373,38 @@ main {
 
   .section {
     max-width: 92vw;
-    height: 98vh;
+    height: 110vh;
   }
 
   .section-info h1 {
     font-size: 2rem;
+    /* width: 100%; */
   }
 
   .section-info {
-    height: 70%;
-    text-align: center;
+    flex-flow: column nowrap;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    overflow: auto;
   }
 
   .section-info p {
-    max-width: 100%;
-    height: 100%;
+    width: 100%;
+  }
+  /* *Sección de las cards */
+
+  .container-section {
+    width: 95%;
+  }
+
+  .card-section {
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .img-card {
+    height: 250px;
   }
 }
