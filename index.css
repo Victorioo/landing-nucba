@@ -259,6 +259,62 @@ main {
   color: gray;
 }
 
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #111;
+  width: 100%;
+  color: #888;
+  padding: 1rem 2rem;
+}
+
+footer img {
+  max-width: 100px;
+  border-radius: 3rem;
+  cursor: pointer;
+  transition: transform 1s;
+}
+
+footer a {
+  cursor: pointer;
+}
+
+.links-footer-container {
+  display: flex;
+  flex-flow: column;
+  gap: 15px;
+}
+
+.link-footer:hover {
+  color: #aaa
+}
+
+.social-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-footer-img {
+  max-width: 6rem;
+  max-height: 3rem;
+}
+
+.social-footer-img-last {
+  max-width: none;
+  max-height: 2.5rem;
+}
+
+.social-footer img:hover {
+  transform: scale(0.95);
+}
+
+
+/* .section-footer {
+  padding: 15px;
+} */
+
 /* * -----------------> MediaQuerys a partir de aca <------------ */
 
 /* *Mobile adaptador ----> eliminar esto luego  */
@@ -414,5 +470,10 @@ main {
 
   .img-card {
     height: 270px;
+  }
+
+  .social-footer {
+    display: flex;
+    flex-flow: column;
   }
 }
