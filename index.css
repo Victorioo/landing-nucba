@@ -311,6 +311,21 @@ footer a {
 }
 
 
+/* ? animaciones de cattocss */
+
+              
+.float{
+  transition: .5s, color .10s;
+  -webkit-transition: .5s, color .10s;
+  -moz-transition: .5s, color .10s;
+}
+.float:hover{
+  box-shadow: 0 8px 8px 0 #050505,0 8px 8px 0 rgb(157, 44, 44);
+  transform: translate(0px,5px);
+  -webkit-transform: translate(0px,5px);
+  -moz-transform:translate(0px,5px);
+}
+
 /* .section-footer {
   padding: 15px;
 } */
@@ -368,6 +383,10 @@ footer a {
 
   .img-card {
     height: 200px;
+  }
+
+  .footer-logo {
+    display: none;
   }
 }
 
