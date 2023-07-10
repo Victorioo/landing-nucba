@@ -197,7 +197,7 @@ main {
   justify-content: center;
   align-items: center;
   width: 70%;
-  background-color: #111;
+  background-color: #2421219e;
   border-radius: 1rem;
   padding: 2rem;
   margin: 3rem 0;
@@ -234,14 +234,12 @@ main {
   border-radius: 0 10px 10px;
   transition: transform 600ms;
   cursor: pointer;
+  box-shadow: 0 0 10px 8px rgba(0, 0, 0, 0.346);
 }
 
 .song-card:hover {
   transform: scale(1.04);
   transition: transform 400ms;
-  .img-card:hover {
-    filter: blur(2px);
-  }
 }
 
 .img-card {
@@ -259,6 +257,17 @@ main {
   color: gray;
 }
 
+
+.contact-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #333;
+  font-size: 1.1rem;
+}
+
 footer {
   display: flex;
   justify-content: space-between;
@@ -266,14 +275,14 @@ footer {
   background-color: #111;
   width: 100%;
   color: #888;
-  padding: 1rem 2rem;
+  padding: .5rem 2rem;
 }
 
 footer img {
-  max-width: 100px;
+  max-width: 90px;
   border-radius: 3rem;
   cursor: pointer;
-  transition: transform 1s;
+  transition: transform .2s;
 }
 
 footer a {
@@ -297,7 +306,6 @@ footer a {
 }
 
 .social-footer-img {
-  max-width: 6rem;
   max-height: 3rem;
 }
 
